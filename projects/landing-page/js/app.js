@@ -31,15 +31,9 @@ const nav = document.querySelector('nav');
 
 function buildNav() {
     const uList = document.querySelector('ul');
-    for (let i = 0; i < 4; i++) {
-        const listItem = document.createElement('li');
-        const itemLink = document.createElement('a');
-        itemLink.setAttribute('class', 'menu__link');
-        itemLink.href = `#section${i+1}`;
-        itemLink.innerHTML = `Section${i+1}`;
-        listItem.appendChild(itemLink);
-        uList.appendChild(listItem);
-    }
+    sections.forEach((sec, i) => {
+        uList.innerHTML += `<li><a class="menu__link" href="#section${i+1}">Section${i+1}</a></li>`;
+    });
     nav.style.display = 'none';
 }
 
