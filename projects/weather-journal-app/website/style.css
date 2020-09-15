@@ -16,35 +16,19 @@ body{
     font-family: 'Oswald', sans-serif;
 }
 
-.holder{
-
-}
-
 .entry{
     background: rgba(59, 74, 107, .4);
 }
 
-#entryHolder{
-
-}
-
-#date{
-
-}
-
-#temp{
-
-}
-
-#content{
-
+#zip, #feelings, #date, #temp, #content{
+    color: cornsilk;
 }
 
 .headline {
-
+    text-align: center;
 }
 .title{
-
+    font-weight: bold;
 }
 
 /*  Basic Styling To Override Default For Basic HTML Elements */
@@ -73,9 +57,7 @@ button{
     font-family: 'Oswald', sans-serif;
     border: none;
     box-shadow: 2px 4px 5px #444;
-}
-h1{
-    font-size: 36px;
+    cursor: pointer;
 }
 
 textarea{
@@ -84,6 +66,7 @@ textarea{
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
 }
+
 /* Reset style for HTML element on active to have no border*/
 input:focus,
 select:focus,
@@ -93,19 +76,16 @@ button:focus {
 }
 /* Style for Placeholder Text*/
 ::placeholder { /* Firefox, Chrome, Opera */ 
-    color: #f0d43a; 
+    color: cornsilk; 
     font-family: 'Oswald', sans-serif;
-
 } 
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-    color: #f0d43a; 
+    color: cornsilk; 
     font-family: 'Oswald', sans-serif;
-
 } 
   
 ::-ms-input-placeholder { /* Microsoft Edge */ 
-    color: #f0d43a; 
+    color: cornsilk; 
     font-family: 'Oswald', sans-serif;
-
 } 
